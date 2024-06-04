@@ -17,8 +17,8 @@ steps:
 
 - task: Docker@2
   inputs:
-    containerRegistry: 'acrforcicdproj'
-    repository: 'acrforcicdproj.azurecr.io'
+    containerRegistry: acrforcicdproj
+    repository: $(imageRepository)
     command: 'buildAndPush'
     Dockerfile: 'dockerfile'
     tags:
