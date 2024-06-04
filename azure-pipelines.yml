@@ -20,6 +20,6 @@ steps:
     containerRegistry: 'acrforcicdproj'
     repository: 'acrforcicdproj.azurecr.io'
     command: 'buildAndPush'
-    Dockerfile: '**cicd/Dockerfile'
+    Dockerfile: 'dockerfile'
     tags:
       $(Build.BuildId)
